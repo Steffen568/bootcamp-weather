@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asstes/css/style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>View Weather</title>
+</head>
+<body>
+   <header class="w3-container">
+       <h1 class="">Weather Dashboard</h1>
+    </header>
+
+    <div class="w3-row">
+        <div class="w3-container w3-col m4 l3" id="search">
+            <form action="submit" class="w3-container">
+                <h3>Search for a City!</h3>
+                <input type="text" class="w3-input w3-border w3-margin-bottom w3-round w3-white" id="searchBox">
+                <button class="w3-button w3-round w3-blue" id="searchBtn">Search</button>
+                <div class="w3-bottombar w3-padding"></div>
+                <div id="past-searches"></div>
+            </form>
+        </div>
+    </div>
+
+    <div class="w3-container w3-col m8 l9">
+        <div class="w3-container" id="forcastToday">
+            <h2 id="currentCity"></h2>
+            <p id="currentTemp"></p>
+            <p id="currentWind"></p>
+            <p id="currentHumidity"></p>
+            <p class="w3-padding-small w3-round" id="currentUvIndex"></p>
+        </div>
+
+        <div>
+            <h3 id="fiveDay"></h3>
+            <div class="w3-row" id="fiveDay">
+                <div class="w3-container w3-col m4 l2 w3-round forecast" id="day1"></div>
+                <div class="w3-container w3-col m4 l2 w3-round forecast" id="day2"></div>
+                <div class="w3-container w3-col m4 l2 w3-round forecast" id="day3"></div>
+                <div class="w3-container w3-col m4 l2 w3-round forecast" id="day4"></div>
+                <div class="w3-container w3-col m4 l2 w3-round forecast" id="day5"></div>
+                
+            </div>
+        </div>
+    </div>
+
+  
+    
+
+
+    <script src="./jquery3-6-0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="./asstes/js/script.js"></script>
+
+</body>
+</html>
